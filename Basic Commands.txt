@@ -252,6 +252,37 @@ Changes not staged for commit:
 
 17. git log (This helps give context and history for a repo)
 
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git log
+commit 25fa575816892c766c6713c2e4aa08b90bd2d41d (HEAD -> main)
+Author: yogeshyhb <yogesh.hb@shell.com>
+Date:   Sat Jan 8 18:18:42 2022 +0530
+
+    commit
+
+commit c15dee0e80c2fcda0c2b0ec1856b62b37c41580f (origin/main, origin/HEAD)
+Author: yogeshyhb <91069825+yogeshyhb@users.noreply.github.com>
+Date:   Sat Jan 8 17:12:07 2022 +0530
+
+    Update Basic Commands.txt
+
+commit 9a81df2eb3cd4af164f0d079c0814573d1a2dbc2
+Author: yogeshyhb <yogesh.hb@shell.com>
+Date:   Sat Jan 8 17:10:27 2022 +0530
+
+    test push request
+
+commit bc9eb4ddcdfde82ca590d679ffde1616dfae59f5
+Author: yogeshyhb <91069825+yogeshyhb@users.noreply.github.com>
+Date:   Sat Jan 8 17:07:54 2022 +0530
+
+    Create testpull.txt
+
+commit c0d463dd011e7c210731eb3bb96ab5f9a040d443
+Author: yogeshyhb <91069825+yogeshyhb@users.noreply.github.com>
+Date:   Sat Jan 8 17:06:54 2022 +0530
+
+    Update Basic Commands.txt
+
 
 18. git rebase (Takes a set of commits, copies them and stores them outside your repo)
 
