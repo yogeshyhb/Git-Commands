@@ -196,3 +196,67 @@ Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:yogeshyhb/Git-Commands.git
    bc9eb4d..9a81df2  main -> main
+
+Other commands
+=============================================================
+16. git slash (To save changes made when they are not in a state to commit to a repo)
+
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git add .
+
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Basic Commands.txt
+        new file:   stashtest.txt
+
+
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git stash -u
+Saved working directory and index state WIP on main: c15dee0 Update Basic Commands.txt
+
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git stash apply
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   stashtest.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Basic Commands.txt
+
+
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   stashtest.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Basic Commands.txt
+
+
+17. git log (This helps give context and history for a repo)
+
+
+18. git rebase (Takes a set of commits, copies them and stores them outside your repo)
+
+
+19. git revert (It helps you to roll back to the previous version of the file)
+
+
+
