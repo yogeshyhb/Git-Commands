@@ -138,4 +138,61 @@ Fast-forward
  Basic Commands.txt | 11 +++++++++--
  1 file changed, 9 insertions(+), 2 deletions(-)
  
+ C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git pull origin main
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.66 KiB | 60.00 KiB/s, done.
+From github.com:yogeshyhb/Git-Commands
+ * branch            main       -> FETCH_HEAD
+   20ab764..bc9eb4d  main       -> origin/main
+Updating 20ab764..bc9eb4d
+Fast-forward
+ Basic Commands.txt | 21 ++++++++++++++++++++-
+ testpull.txt       |  1 +
+ 2 files changed, 21 insertions(+), 1 deletion(-)
+ create mode 100644 testpull.txt
+
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>dir
+ Volume in drive C is Local Disk
+ Volume Serial Number is 1617-BF7A
+
+ Directory of C:\Users\Yogesh.HB\GithubPractice\Git-Commands
+
+01/08/2022  05:08 PM    <DIR>          .
+01/08/2022  05:08 PM    <DIR>          ..
+01/08/2022  05:08 PM             5,022 Basic Commands.txt
+01/08/2022  05:01 PM                50 README.md
+01/08/2022  05:08 PM                46 testpull.txt
+               3 File(s)          5,118 bytes
+               2 Dir(s)  162,461,114,368 bytes free
+ 
  15.  (Push changes to remote repo)
+ 
+ C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git add .
+
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   testpush.txt
+
+
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git commit -m "test push request"
+[main 9a81df2] test push request
+ 1 file changed, 1 insertion(+)
+ create mode 100644 testpush.txt
+ 
+ C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 152.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:yogeshyhb/Git-Commands.git
+   bc9eb4d..9a81df2  main -> main
