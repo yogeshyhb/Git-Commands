@@ -119,4 +119,23 @@ remote: Compressing objects: 100% (4/4), done.
 remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (6/6), done.
 
-14. 
+14. git pull origin <branch_name> (Pull changes from gitrepo)
+
+Example - C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git branch
+* main
+
+C:\Users\Yogesh.HB\GithubPractice\Git-Commands>git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 887 bytes | 46.00 KiB/s, done.
+From github.com:yogeshyhb/Git-Commands
+ * branch            main       -> FETCH_HEAD
+   a44b0c8..20ab764  main       -> origin/main
+Updating a44b0c8..20ab764
+Fast-forward
+ Basic Commands.txt | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+ 
+ 15.  (Push changes to remote repo)
