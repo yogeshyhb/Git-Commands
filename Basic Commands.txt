@@ -1,0 +1,115 @@
+1. git --version (Check git version )
+
+Example - C:\windows\system32>git --version
+git version 2.33.0.windows.2
+
+2. git init (make empty directory into a git repository(local repo)) 
+
+Example - C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git init
+Initialized empty Git repository in C:/Users/Yogesh.HB/GithubPractice/myfirstgitrepo/.git/ 
+
+3. git add - adds files to staging area
+   git add . - adds all the files in the directory to staging area
+
+example - C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git add pythoncode.py
+
+C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git add .
+
+
+4. git commit  - to record changes made to your files
+
+Example - C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git commit -m "first commit"
+[master (root-commit) 0a9b0ce] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 pythoncode.py
+
+5. git status - gives info about files which are not committed in the staging area etc..
+
+Example1 - C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git status
+On branch master
+nothing to commit, working tree clean
+
+Example2 - C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   pythoncode.py
+        new file:   welcome.py
+
+6. git config - used to set username and email of user committing changes to repo
+
+Example1 - To set config at repo level 
+C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git config username "Yogesh"
+C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git config email "Yogesh.hb@shell.com"
+
+Example2 - To set config at global level 
+C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git config --global username "Yogesh"
+C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git config --global email Yogesh.hb@shell.com
+
+
+7. git branch - to list the available branches in git repo
+
+Example - C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git branch
+* master
+
+8. git branch branch_name - to create new branch 
+
+Example - C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git branch new_feature
+
+	C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git branch
+	* master
+ 	 new_feature
+
+
+9. git checkout branch_name - to switch from master branch to new branch
+
+Example - C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git checkout new_feature
+Switched to branch 'new_feature'
+M       pythoncode.py
+A       welcome.py
+
+C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git status
+On branch new_feature
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   pythoncode.py
+        new file:   welcome.py
+
+
+C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git commit -m "committing to new branch"
+[new_feature f7e3206] committing to new branch
+ 2 files changed, 9 insertions(+)
+ create mode 100644 welcome.py
+
+
+10. git merge file_name (to merge feature branch into master)
+
+C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git checkout master
+Switched to branch 'master'
+
+C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git branch
+* master
+  new_feature
+
+C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git merge new_feature
+Updating 0a9b0ce..f7e3206
+Fast-forward
+ pythoncode.py | 9 +++++++++
+ welcome.py    | 0
+ 2 files changed, 9 insertions(+)
+ create mode 100644 welcome.py
+
+
+11. git branch -d branch_name (to delete any branch)
+
+Example - C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git branch -d new_feature
+Deleted branch new_feature (was f7e3206).
+
+12. git remote add origin <ssh link> (Connect local repo to Github remote repo)
+
+Example - C:\Users\Yogesh.HB\GithubPractice\myfirstgitrepo>git remote add origin git@github.com:yogeshyhb/Git-Commands.git
+
+13. git clone - cloning remote repo as working directory
+
+Example - 
+
